@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { FC } from "react";
 import ArticleList from "../components/ArticleList";
+import { server } from "../config";
 
 type Props = {
   articles: ArticleProps[];
@@ -26,6 +27,17 @@ const index: FC<Props> = ({ articles }: Props) => {
 };
 
 export default index;
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/articles`);
+  const articles = await res.json();
+
+  return {
+    props: {
+      articles,
+    },
+  };
+};
 
 // export const getStaticProps = async () => {
 //   const res = await fetch(

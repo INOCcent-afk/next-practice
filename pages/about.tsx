@@ -1,16 +1,16 @@
 import Head from "next/head";
-import { FC } from "react";
+import React, { FC } from "react";
 
-const index: FC = () => {
+const about: FC = () => {
   return (
     <div>
       <Head>
         <title>WebDev News</title>
         <meta name="keywords" content="web development" />
       </Head>
-      <h1>hello</h1>
+      <h1>ABOUT</h1>
     </div>
   );
 };
 
-export default index;
+export default about;

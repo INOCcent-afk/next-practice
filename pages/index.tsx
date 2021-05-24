@@ -8,7 +8,7 @@ const index: FC = () => {
         <title>WebDev News</title>
         <meta name="keywords" content="web development" />
       </Head>
-      <h1>hello</h1>
+      <h1>Welcome to next</h1>
     </div>
   );
 };

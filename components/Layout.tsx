@@ -1,12 +1,16 @@
-import React, { FC } from "react";
+import React, { FC, ReactNode } from "react";
 
 import styles from "../styles/Layout.module.css";
 
-const Layout: FC = () => {
+type Props = {
+  children: ReactNode;
+};
+
+const Layout: FC<Props> = ({ children }: Props) => {
   return (
     <>
       <div className={styles.container}>
-        <main className={styles.main}></main>
+        <main className={styles.main}>{children}</main>
       </div>
     </>
   );

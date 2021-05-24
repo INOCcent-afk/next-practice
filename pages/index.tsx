@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { FC } from "react";
 import ArticleList from "../components/ArticleList";
 import { server } from "../config";
@@ -17,10 +16,6 @@ type ArticleProps = {
 const index: FC<Props> = ({ articles }: Props) => {
   return (
     <div>
-      <Head>
-        <title>WebDev News</title>
-        <meta name="keywords" content="web development" />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   );

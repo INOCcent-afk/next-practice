@@ -1,13 +1,10 @@
-import Head from "next/head";
 import React, { FC } from "react";
+import Meta from "../components/Meta";
 
 const about: FC = () => {
   return (
     <div>
-      <Head>
-        <title>WebDev News</title>
-        <meta name="keywords" content="web development" />
-      </Head>
+      <Meta title="About" />
       <h1>ABOUT</h1>
     </div>
   );
